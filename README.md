@@ -13,7 +13,7 @@ source venv/bin/activate
 
 Day | Solved
 ---|---
-01 | no
+01 | yes
 02 | no
 03 | no
 04 | no
