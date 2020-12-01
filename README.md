@@ -1,15 +1,15 @@
 # Advent of Code 2020
 
-Solutions in Python
+Solutions in Python and C++
 
-## Environment
+## Python Environment
 
 ```
 virtualenv -p python3.9 venv
 source venv/bin/activate
 ```
 
-## State
+## Solved
 
 Day | Python | C++
 ---|---|---
