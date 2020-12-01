@@ -11,29 +11,30 @@ source venv/bin/activate
 
 ## State
 
-Day | Solved
----|---
-01 | yes
-02 | no
-03 | no
-04 | no
-05 | no
-06 | no
-07 | no
-08 | no
-09 | no
-10 | no
-11 | no
-12 | no
-13 | no
-14 | no
-15 | no
-16 | no
-17 | no
-18 | no
-19 | no
-20 | no
-21 | no
-22 | no
-23 | no
-24 | no
+Day | Python | C++
+---|---|---
+01 | yes | yes
+02 | no | no
+03 | no | no
+04 | no | no
+05 | no | no
+06 | no | no
+07 | no | no
+08 | no | no
+09 | no | no
+10 | no | no
+11 | no | no
+12 | no | no
+13 | no | no
+14 | no | no
+15 | no | no
+16 | no | no
+17 | no | no
+18 | no | no
+19 | no | no
+20 | no | no
+21 | no | no
+22 | no | no
+23 | no | no
+24 | no | no
+25 | no | no
