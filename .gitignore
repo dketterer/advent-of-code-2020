@@ -251,4 +251,5 @@ _deps
 *.out
 *.app
 
-*.txt
+input.txt
+test.txt
