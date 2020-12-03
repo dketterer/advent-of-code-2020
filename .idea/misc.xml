@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/day02-cxx">
+  <component name="CMakeWorkspace" PROJECT_DIR="$PROJECT_DIR$/day03-cxx">
     <contentRoot DIR="$PROJECT_DIR$" />
   </component>
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.9 (advent-of-code-2020)" project-jdk-type="Python SDK" />
