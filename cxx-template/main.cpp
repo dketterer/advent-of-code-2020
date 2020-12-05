@@ -13,11 +13,12 @@ int main() {
 
     std::ifstream infile("../input.txt");
 
-    int a;
-    std::vector<int> numbers;
-    while (infile >> a) {
-        numbers.push_back(a);
+    std::string line;
+    std::vector<string> lines;
+    while (std::getline(infile, line)) {
+        lines.push_back(line);
     }
+
 
     return 0;
 }
