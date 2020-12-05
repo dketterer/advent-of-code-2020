@@ -7,7 +7,14 @@ Solutions in Python and C++
 ```
 virtualenv -p python3.9 venv
 source venv/bin/activate
+pip install numpy
 ```
+
+## C++ Environment
+
+* CMake
+* GCC 9.3 (C++17)
+* Boost 1.71.0
 
 ## Solved
 
@@ -17,7 +24,7 @@ Day | Python | C++
 02 | yes | yes
 03 | yes | yes
 04 | yes | yes
-05 | yes | no
+05 | yes | yes
 06 | no | no
 07 | no | no
 08 | no | no
