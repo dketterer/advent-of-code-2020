@@ -16,8 +16,8 @@ Day | Python | C++
 01 | yes | yes
 02 | yes | yes
 03 | yes | yes
-04 | yes | no
-05 | no | no
+04 | yes | yes
+05 | yes | no
 06 | no | no
 07 | no | no
 08 | no | no
