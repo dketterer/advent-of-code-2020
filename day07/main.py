@@ -2,7 +2,7 @@ import re
 
 
 class Bag:
-    def __init__(self, color, parent, childs=None, edge_weights=None):
+    def __init__(self, color, parent=None, childs=None, edge_weights=None):
         self.color = color
         self.parents = [parent] if parent else []
         self.childs = childs if childs else []
@@ -41,12 +41,12 @@ if __name__ == '__main__':
 
     for line in lines:
         parent_name = pat1.match(line)[1]
-        if bags.get(parent_name, None) is None:
-            bags[parent_name] = Bag(parent_name, None)
+        if parent_name not in bags:
+            bags[parent_name] = Bag(parent_name)
 
         for match in pat2.finditer(line):
             num, color = int(match[1]), match[2]
-            if bags.get(color, None) is None:
+            if color not in bags:
                 bags[color] = Bag(color, bags[parent_name])
             else:
                 bags[color].parents.append(bags[parent_name])
