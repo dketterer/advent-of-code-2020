@@ -1,3 +1,6 @@
+import re
+
+
 class Bag:
     def __init__(self, color, parent, childs=None, edge_weights=None):
         self.color = color
@@ -32,30 +35,23 @@ def traverse_forward(bag, this_weight):
 if __name__ == '__main__':
     with open('input.txt', 'r') as f:
         lines = f.readlines()
-
-    lines = [line.strip().rstrip('.') for line in lines]
-
     bags = {}
-    empty = 0
+    pat1 = re.compile(r"(\w+ \w+) bags contain")
+    pat2 = re.compile(r"(\d+) (\w+ \w+) bag")
+
     for line in lines:
-        parent_name = line.split('contain')[0].split('bags')[0].strip()
-        childs = line.split('contain')[1].strip().split(',')
+        parent_name = pat1.match(line)[1]
         if bags.get(parent_name, None) is None:
             bags[parent_name] = Bag(parent_name, None)
 
-        for child in childs:
-            child = child.strip()
-            if 'other' in child:
-                empty += 1
-                continue
-            num, adjective, color, _ = child.split(' ')
-            color = f'{adjective} {color}'
+        for match in pat2.finditer(line):
+            num, color = int(match[1]), match[2]
             if bags.get(color, None) is None:
                 bags[color] = Bag(color, bags[parent_name])
             else:
                 bags[color].parents.append(bags[parent_name])
             bags[parent_name].childs.append(bags[color])
-            bags[parent_name].edge_weight.append(int(num))
+            bags[parent_name].edge_weight.append(num)
 
     shinygold = bags['shiny gold']
     print(f'Part 1: {traverse_back(shinygold)}')
