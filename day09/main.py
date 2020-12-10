@@ -9,7 +9,7 @@ if __name__ == '__main__':
     relevant_length = 25
 
     for i in range(len(cypher) - relevant_length):
-        combinations = list(map(lambda t: sum(t), itertools.combinations(cypher[i:i + relevant_length], 2)))
+        combinations = map(lambda t: sum(t), itertools.combinations(cypher[i:i + relevant_length], 2))
         if cypher[i + relevant_length] not in combinations:
             invalid = cypher[i + relevant_length]
             print(f"Part 1: {invalid}")
