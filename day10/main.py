@@ -28,5 +28,5 @@ if __name__ == '__main__':
 
     diff_1 = sum(map(lambda j: j == 1, delta_jolts))
     diff_3 = sum(map(lambda j: j == 3, delta_jolts)) + 1
-    print(f'Part 1: {diff_1*diff_3}')
-    print(f'Part 2: {walk([0]+ delta_jolts, defaultdict(int), 0)}')
+    print(f'Part 1: {diff_1 * diff_3}')
+    print(f'Part 2: {walk([0] + delta_jolts, defaultdict(int), 0)}')
