@@ -38,7 +38,7 @@ Day | Python | C++ | JavaScript
 16 | yes | no | no
 17 | yes | no | no
 18 | yes | no | no
-19 | no | no | no
+19 | yes | no | no
 20 | no | no | no
 21 | no | no | no
 22 | no | no | no
