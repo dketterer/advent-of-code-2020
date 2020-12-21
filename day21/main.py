@@ -40,10 +40,10 @@ if __name__ == '__main__':
         for allergen in food.allergens:
             allergen_candidates[allergen] = allergen_candidates[allergen].intersection(set(food.ingredients))
 
-    ingredient_exlusion = set(all_ingredients).difference(
+    ingredient_exclusion = set(all_ingredients).difference(
         *[allergen_candidates[allergen] for allergen in allergen_candidates.keys()])
     count_exclusion = 0
-    for ingredient in ingredient_exlusion:
+    for ingredient in ingredient_exclusion:
         count_exclusion += all_ingredients.count(ingredient)
 
     allergen_ingredient_match = []
