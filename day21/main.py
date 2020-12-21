@@ -1,6 +1,5 @@
 import re
 from collections import defaultdict
-from copy import copy, deepcopy
 from dataclasses import field, dataclass
 from typing import List
 
@@ -35,7 +34,7 @@ if __name__ == '__main__':
             all_ingredients.append(ingredient)
         foods.append(food)
 
-    allergen_candidates = defaultdict(lambda: set(deepcopy(all_ingredients)))
+    allergen_candidates = defaultdict(lambda: set(all_ingredients))
 
     for food in foods:
         for allergen in food.allergens:
