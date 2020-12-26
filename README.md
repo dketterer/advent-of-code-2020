@@ -43,6 +43,6 @@ Day | Python | C++ | JavaScript
 21 | yes | no | no
 22 | yes | no | no
 23 | yes | no | no
-24 | no | no | no
+24 | yes | no | no
 25 | no | no | no
 
