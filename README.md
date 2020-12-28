@@ -1,13 +1,13 @@
 # Advent of Code 2020
 
-Solutions in Python and C++
+My (complete) solutions to Advent of Code 2020 in Python and some solutions in the beginniung in C++.
 
 ## Python Environment
 
 ```
 virtualenv -p python3.9 venv
 source venv/bin/activate
-pip install numpy
+pip install numpy scipy
 ```
 
 ## C++ Environment
@@ -20,29 +20,29 @@ pip install numpy
 
 Day | Python | C++ | JavaScript
 ---|---|---|---
-01 | yes | yes | no
-02 | yes | yes | no
-03 | yes | yes | no
-04 | yes | yes | no
-05 | yes | yes | no
-06 | yes | yes | no
-07 | yes | yes | no
-08 | yes | yes | no
-09 | yes | no | no
-10 | yes | no | yes
-11 | yes | no | no
-12 | yes | no | no
-13 | yes | no | no
-14 | yes | no | no
-15 | yes | no | no
-16 | yes | no | no
-17 | yes | no | no
-18 | yes | no | no
-19 | yes | no | no
-20 | yes | no | no
-21 | yes | no | no
-22 | yes | no | no
-23 | yes | no | no
-24 | yes | no | no
-25 | yes | no | no
+01 | [ :star: :star: ](day01/main.py) | [ :star: :star: ](day01-cxx/main.cpp) | no
+02 | [ :star: :star: ](day02/main.py) | [ :star: :star: ](day02-cxx/main.cpp) | no
+03 | [ :star: :star: ](day03/main.py) | [ :star: :star: ](day03-cxx/main.cpp) | no
+04 | [ :star: :star: ](day04/main.py) | [ :star: :star: ](day04-cxx/main.cpp) | no
+05 | [ :star: :star: ](day05/main.py) | [ :star: :star: ](day05-cxx/main.cpp) | no
+06 | [ :star: :star: ](day06/main.py) | [ :star: :star: ](day06-cxx/main.cpp) | no
+07 | [ :star: :star: ](day07/main.py) | [ :star: :star: ](day07-cxx/main.cpp) | no
+08 | [ :star: :star: ](day08/main.py) | [ :star: :star: ](day08-cxx/main.cpp) | no
+09 | [ :star: :star: ](day09/main.py) | no | no
+10 | [ :star: :star: ](day10/main.py) | no | [ :star: :star: ](day10-js/app.js)
+11 | [ :star: :star: ](day11/main.py) | no | no
+12 | [ :star: :star: ](day12/main.py) | no | no
+13 | [ :star: :star: ](day13/main.py) | no | no
+14 | [ :star: :star: ](day14/main.py) | no | no
+15 | [ :star: :star: ](day15/main.py) | no | no
+16 | [ :star: :star: ](day16/main.py) | no | no
+17 | [ :star: :star: ](day17/main.py) | no | no
+18 | [ :star: :star: ](day18/main.py) | no | no
+19 | [ :star: :star: ](day19/main.py) | no | no
+20 | [ :star: :star: ](day20/main.py) | no | no
+21 | [ :star: :star: ](day21/main.py) | no | no
+22 | [ :star: :star: ](day22/main.py) | no | no
+23 | [ :star: :star: ](day23/main.py) | no | no
+24 | [ :star: :star: ](day24/main.py) | no | no
+25 | [ :star: :star: ](day25/main.py) | no | no
 
