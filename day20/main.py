@@ -5,7 +5,7 @@ from dataclasses import dataclass, field
 from typing import Set
 
 import numpy as np
-from scipy.signal import correlate2d
+from scipy.signal import convolve2d
 
 
 @dataclass
@@ -204,7 +204,7 @@ if __name__ == '__main__':
 
     sm_count = 0
     for picture in pictures:
-        result_space = correlate2d(picture, seamonster_kernel, mode='valid')
+        result_space = convolve2d(picture, seamonster_kernel, mode='valid')
         result_space = result_space.astype(np.uint8)
         count_monsters = np.count_nonzero(result_space == seamonster_kernel.sum())
         if count_monsters:
