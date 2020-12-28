@@ -1,6 +1,6 @@
 # Advent of Code 2020
 
-My (complete) solutions to Advent of Code 2020 in Python and some solutions in the beginniung in C++.
+My (complete) solutions to Advent of Code 2020 in Python and some solutions in the beginning with C++.
 
 ## Python Environment
 
